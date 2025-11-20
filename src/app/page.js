@@ -101,10 +101,15 @@ export default function Home() {
               lineHeight: 1.6,
             }}
           >
-            I&apos;m an administrative assistant at the Italian Embassy in
-            Berlin, passionate about software, automation and modern web
-            technologies. I love building tools that make everyday work smoother
-            – from HR workflows to personal finance dashboards.
+            I am an administrative professional with a solid background in
+            diplomatic, real estate, and technology environments. I combine
+            organizational precision with genuine curiosity for digital
+            innovation and software development. Over the years, I have learned
+            to simplify complex workflows, automate processes, and make data
+            work for people. I value collaboration, clarity, and efficiency —
+            qualities that help me adapt easily to hybrid or remote workplaces.
+            My goal is to contribute to a modern, tech-driven organization where
+            reliability meets innovation.
           </p>
         </section>
 
@@ -145,6 +150,14 @@ export default function Home() {
               >
                 myDesk
               </h3>
+              <a
+                href='https://github.com/derblaueengel2003/capstone/'
+                target='_blank'
+                rel='noreferrer'
+                style={{ color: '#2563eb', textDecoration: 'none' }}
+              >
+                View project
+              </a>
               <p
                 style={{
                   margin: 0,
@@ -176,6 +189,14 @@ export default function Home() {
               >
                 Gestionale m2Square
               </h3>
+              <a
+                href='https://github.com/derblaueengel2003/gestionale-electron'
+                target='_blank'
+                rel='noreferrer'
+                style={{ color: '#2563eb', textDecoration: 'none' }}
+              >
+                View project
+              </a>
               <p
                 style={{
                   margin: 0,
