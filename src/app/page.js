@@ -1,106 +1,35 @@
+import './home.css';
+
 export default function Home() {
   return (
-    <main
-      style={{
-        minHeight: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontFamily:
-          "-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', sans-serif",
-        backgroundColor: '#f5f5f7',
-        padding: '2rem',
-      }}
-    >
-      <div
-        style={{
-          maxWidth: '720px',
-          width: '100%',
-          backgroundColor: '#ffffff',
-          borderRadius: '16px',
-          padding: '2.5rem',
-          boxShadow: '0 18px 45px rgba(15, 23, 42, 0.12)',
-          border: '1px solid rgba(148, 163, 184, 0.25)',
-        }}
-      >
-        <header
-          style={{
-            marginBottom: '1.75rem',
-            display: 'flex',
-            justifyContent: 'space-between',
-            gap: '1rem',
-            alignItems: 'baseline',
-          }}
-        >
+    <main className='home-page'>
+      <div className='home-card'>
+        <header className='home-header'>
           <div>
-            <h1
-              style={{
-                fontSize: '2rem',
-                margin: 0,
-                color: '#0f172a',
-              }}
-            >
-              Angelo Arboscello
-            </h1>
-            <p
-              style={{
-                margin: '0.35rem 0 0',
-                color: '#64748b',
-              }}
-            >
+            <h1 className='home-title'>Angelo Arboscello</h1>
+            <p className='home-subtitle'>
               Administrative assistant · Aspiring developer · SaaS & tooling
               enthusiast
             </p>
           </div>
-          <nav
-            style={{
-              fontSize: '0.9rem',
-              display: 'flex',
-              gap: '0.75rem',
-              color: '#475569',
-            }}
-          >
-            <a
-              href='#about'
-              style={{ textDecoration: 'none', color: 'inherit' }}
-            >
+          <nav className='home-nav' hidden>
+            <a className='home-nav-link' href='#about'>
               About
             </a>
-            <span>·</span>
-            <a
-              href='#projects'
-              style={{ textDecoration: 'none', color: 'inherit' }}
-            >
+            <span className='home-nav-separator'>·</span>
+            <a className='home-nav-link' href='#projects'>
               Projects
             </a>
-            <span>·</span>
-            <a
-              href='#contact'
-              style={{ textDecoration: 'none', color: 'inherit' }}
-            >
+            <span className='home-nav-separator'>·</span>
+            <a className='home-nav-link' href='#contact'>
               Contact
             </a>
           </nav>
         </header>
 
-        <section id='about' style={{ marginBottom: '1.75rem' }}>
-          <h2
-            style={{
-              fontSize: '1.1rem',
-              margin: 0,
-              marginBottom: '0.5rem',
-              color: '#0f172a',
-            }}
-          >
-            About
-          </h2>
-          <p
-            style={{
-              margin: 0,
-              color: '#4b5563',
-              lineHeight: 1.6,
-            }}
-          >
+        <section id='about' className='home-section'>
+          <h2 className='section-title'>About</h2>
+          <p className='section-text'>
             I am an administrative professional with a solid background in
             diplomatic, real estate, and technology environments. I combine
             organizational precision with genuine curiosity for digital
@@ -113,98 +42,37 @@ export default function Home() {
           </p>
         </section>
 
-        <section id='projects' style={{ marginBottom: '1.75rem' }}>
-          <h2
-            style={{
-              fontSize: '1.1rem',
-              margin: 0,
-              marginBottom: '0.75rem',
-              color: '#0f172a',
-            }}
-          >
-            Selected projects
-          </h2>
+        <section id='projects' className='home-section'>
+          <h2 className='section-title projects-title'>Selected projects</h2>
 
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-              gap: '1rem',
-            }}
-          >
-            <div
-              style={{
-                padding: '1rem',
-                borderRadius: '0.9rem',
-                border: '1px solid rgba(148, 163, 184, 0.4)',
-                backgroundColor: '#f9fafb',
-              }}
-            >
-              <h3
-                style={{
-                  margin: 0,
-                  marginBottom: '0.35rem',
-                  fontSize: '1rem',
-                  color: '#0f172a',
-                }}
-              >
-                myDesk
-              </h3>
+          <div className='projects-grid'>
+            <div className='project-card'>
+              <h3 className='project-title'>myDesk</h3>
               <a
+                className='project-link'
                 href='https://github.com/derblaueengel2003/capstone/'
                 target='_blank'
                 rel='noreferrer'
-                style={{ color: '#2563eb', textDecoration: 'none' }}
               >
                 View project
               </a>
-              <p
-                style={{
-                  margin: 0,
-                  fontSize: '0.9rem',
-                  color: '#4b5563',
-                  lineHeight: 1.5,
-                }}
-              >
+              <p className='project-text'>
                 Vacation planning project created for the CS50 Web Programming
                 with Python and JavaScript.
               </p>
             </div>
 
-            <div
-              style={{
-                padding: '1rem',
-                borderRadius: '0.9rem',
-                border: '1px solid rgba(148, 163, 184, 0.4)',
-                backgroundColor: '#f9fafb',
-              }}
-            >
-              <h3
-                style={{
-                  margin: 0,
-                  marginBottom: '0.35rem',
-                  fontSize: '1rem',
-                  color: '#0f172a',
-                }}
-              >
-                Gestionale m2Square
-              </h3>
+            <div className='project-card'>
+              <h3 className='project-title'>Gestionale m2Square</h3>
               <a
+                className='project-link'
                 href='https://github.com/derblaueengel2003/gestionale-electron'
                 target='_blank'
                 rel='noreferrer'
-                style={{ color: '#2563eb', textDecoration: 'none' }}
               >
                 View project
               </a>
-              <p
-                style={{
-                  margin: 0,
-                  fontSize: '0.9rem',
-                  color: '#4b5563',
-                  lineHeight: 1.5,
-                }}
-              >
+              <p className='project-text'>
                 A custom Tool I created for managing the Real Estate Workflow
                 from acquisition to billing.
               </p>
@@ -212,55 +80,27 @@ export default function Home() {
           </div>
         </section>
 
-        <section id='contact'>
-          <h2
-            style={{
-              fontSize: '1.1rem',
-              margin: 0,
-              marginBottom: '0.5rem',
-              color: '#0f172a',
-            }}
-          >
-            Contact
-          </h2>
-          <p
-            style={{
-              margin: 0,
-              marginBottom: '0.4rem',
-              color: '#4b5563',
-              lineHeight: 1.6,
-            }}
-          >
-            You can find me online here:
-          </p>
-          <ul
-            style={{
-              listStyle: 'none',
-              padding: 0,
-              margin: 0,
-              display: 'flex',
-              flexWrap: 'wrap',
-              gap: '0.75rem',
-              fontSize: '0.9rem',
-            }}
-          >
+        <section id='contact' className='home-section'>
+          <h2 className='section-title'>Contact</h2>
+          <p className='contact-text'>You can find me online here:</p>
+          <ul className='contact-list'>
             <li>
               <a
+                className='contact-link'
                 href='https://github.com/derblaueengel2003'
                 target='_blank'
                 rel='noreferrer'
-                style={{ color: '#2563eb', textDecoration: 'none' }}
               >
                 GitHub
               </a>
             </li>
-            <li>·</li>
+            <li className='home-nav-separator'>·</li>
             <li>
               <a
+                className='contact-link'
                 href='https://www.linkedin.com/in/angelo-arboscello'
                 target='_blank'
                 rel='noreferrer'
-                style={{ color: '#2563eb', textDecoration: 'none' }}
               >
                 LinkedIn
               </a>
