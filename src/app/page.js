@@ -1,65 +1,252 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <main
+      style={{
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        fontFamily:
+          "-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        backgroundColor: '#f5f5f7',
+        padding: '2rem',
+      }}
+    >
+      <div
+        style={{
+          maxWidth: '720px',
+          width: '100%',
+          backgroundColor: '#ffffff',
+          borderRadius: '16px',
+          padding: '2.5rem',
+          boxShadow: '0 18px 45px rgba(15, 23, 42, 0.12)',
+          border: '1px solid rgba(148, 163, 184, 0.25)',
+        }}
+      >
+        <header
+          style={{
+            marginBottom: '1.75rem',
+            display: 'flex',
+            justifyContent: 'space-between',
+            gap: '1rem',
+            alignItems: 'baseline',
+          }}
+        >
+          <div>
+            <h1
+              style={{
+                fontSize: '2rem',
+                margin: 0,
+                color: '#0f172a',
+              }}
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              Angelo Arboscello
+            </h1>
+            <p
+              style={{
+                margin: '0.35rem 0 0',
+                color: '#64748b',
+              }}
             >
-              Learning
-            </a>{" "}
-            center.
+              Administrative assistant · Aspiring developer · SaaS & tooling
+              enthusiast
+            </p>
+          </div>
+          <nav
+            style={{
+              fontSize: '0.9rem',
+              display: 'flex',
+              gap: '0.75rem',
+              color: '#475569',
+            }}
+          >
+            <a
+              href='#about'
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+              About
+            </a>
+            <span>·</span>
+            <a
+              href='#projects'
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+              Projects
+            </a>
+            <span>·</span>
+            <a
+              href='#contact'
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+              Contact
+            </a>
+          </nav>
+        </header>
+
+        <section id='about' style={{ marginBottom: '1.75rem' }}>
+          <h2
+            style={{
+              fontSize: '1.1rem',
+              margin: 0,
+              marginBottom: '0.5rem',
+              color: '#0f172a',
+            }}
+          >
+            About
+          </h2>
+          <p
+            style={{
+              margin: 0,
+              color: '#4b5563',
+              lineHeight: 1.6,
+            }}
+          >
+            I&apos;m an administrative assistant at the Italian Embassy in
+            Berlin, passionate about software, automation and modern web
+            technologies. I love building tools that make everyday work smoother
+            – from HR workflows to personal finance dashboards.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+        </section>
+
+        <section id='projects' style={{ marginBottom: '1.75rem' }}>
+          <h2
+            style={{
+              fontSize: '1.1rem',
+              margin: 0,
+              marginBottom: '0.75rem',
+              color: '#0f172a',
+            }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Selected projects
+          </h2>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+              gap: '1rem',
+            }}
           >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+            <div
+              style={{
+                padding: '1rem',
+                borderRadius: '0.9rem',
+                border: '1px solid rgba(148, 163, 184, 0.4)',
+                backgroundColor: '#f9fafb',
+              }}
+            >
+              <h3
+                style={{
+                  margin: 0,
+                  marginBottom: '0.35rem',
+                  fontSize: '1rem',
+                  color: '#0f172a',
+                }}
+              >
+                myDesk
+              </h3>
+              <p
+                style={{
+                  margin: 0,
+                  fontSize: '0.9rem',
+                  color: '#4b5563',
+                  lineHeight: 1.5,
+                }}
+              >
+                Vacation planning project created for the CS50 Web Programming
+                with Python and JavaScript.
+              </p>
+            </div>
+
+            <div
+              style={{
+                padding: '1rem',
+                borderRadius: '0.9rem',
+                border: '1px solid rgba(148, 163, 184, 0.4)',
+                backgroundColor: '#f9fafb',
+              }}
+            >
+              <h3
+                style={{
+                  margin: 0,
+                  marginBottom: '0.35rem',
+                  fontSize: '1rem',
+                  color: '#0f172a',
+                }}
+              >
+                Gestionale m2Square
+              </h3>
+              <p
+                style={{
+                  margin: 0,
+                  fontSize: '0.9rem',
+                  color: '#4b5563',
+                  lineHeight: 1.5,
+                }}
+              >
+                A custom Tool I created for managing the Real Estate Workflow
+                from acquisition to billing.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id='contact'>
+          <h2
+            style={{
+              fontSize: '1.1rem',
+              margin: 0,
+              marginBottom: '0.5rem',
+              color: '#0f172a',
+            }}
+          >
+            Contact
+          </h2>
+          <p
+            style={{
+              margin: 0,
+              marginBottom: '0.4rem',
+              color: '#4b5563',
+              lineHeight: 1.6,
+            }}
+          >
+            You can find me online here:
+          </p>
+          <ul
+            style={{
+              listStyle: 'none',
+              padding: 0,
+              margin: 0,
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '0.75rem',
+              fontSize: '0.9rem',
+            }}
+          >
+            <li>
+              <a
+                href='https://github.com/derblaueengel2003'
+                target='_blank'
+                rel='noreferrer'
+                style={{ color: '#2563eb', textDecoration: 'none' }}
+              >
+                GitHub
+              </a>
+            </li>
+            <li>·</li>
+            <li>
+              <a
+                href='https://www.linkedin.com/in/angelo-arboscello'
+                target='_blank'
+                rel='noreferrer'
+                style={{ color: '#2563eb', textDecoration: 'none' }}
+              >
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
   );
 }
